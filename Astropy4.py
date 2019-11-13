@@ -88,11 +88,11 @@ def parameters(yesorno):
         print(dimensions)
         # Co-ords of reference pixel; RA (deg), DEC (deg)
         print('[ RA (deg):', RA, ', DEC (deg):', DEC, ']')
-
-
 # updates to the master branch while being worked on together
 
 
+
+# more dev code, close to recent alterations in the master branch
 def center(imagearray):
     """Highest Intensity Pixel found"""
 
