@@ -11,7 +11,7 @@ from numpy import diff
 from ClusterParams import abell3676 as bcg
 abell = 3676
 # Open Image file, extract data and header
-hdulist = fits.open('images/Abell3676_08683_9h_wfpc2_f814w_pc_drz.fits')
+hdulist = fits.open(bcg[11])
 
 
 hdu = hdulist[1]          # Holds image data

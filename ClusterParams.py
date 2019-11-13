@@ -879,7 +879,7 @@ abell1983 = a1983centre, a1983size, a1983angle, a1983eccentricity, \
 
 
 "Abell 2040"
-a2040imagename = 'Abell2040_08683_51_wfpc2_f814w_pc_drz.fits'
+a2040imagename = 'images/abell2040'
 a2040centre = 431, 438    # Centre y, x (don't ask)
 a2040offset = 0.2, -0.6   # Pixel offset off of centre x, y +ve moves to the right and up
 a2040size = 125
@@ -898,7 +898,7 @@ a2040rot = 'no', 0.9
 a2040gs = 5
 """Final List: holding all the BCGs individual parameters:::::"""
 abell2040 = a2040centre, a2040size, a2040angle, a2040eccentricity, \
-           a2040params, a2040offset, a2040gs, a2040rot, 130, 154.46, a2040ir
+           a2040params, a2040offset, a2040gs, a2040rot, 130, 154.46, a2040ir, a2040imagename
 
 
 "Abell 2052"
@@ -1873,7 +1873,7 @@ abell4049 = a4049centre, a4049size, a4049angle, a4049eccentricity, \
 
 
 """Abell 4059"""
-abell4059imagename = 'abell4059_wfpc2_f814w.fits'
+abell4059imagename = 'images/a4059.fits'
 abell4059centre = 651, 1006    # Centre y, x (don't ask)
 abell4059offset = 0.5, -3   # Pixel offset off of centre x, y +ve moves to the right and up
 abell4059size = 150
