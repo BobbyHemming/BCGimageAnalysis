@@ -32,6 +32,7 @@ def some_decorator(input_func):
 
 @some_decorator
 def hello(*args, **kwargs):
+    print(*args)
     print("Hello {}".format(kwargs['name']))
 
 
