@@ -13,9 +13,7 @@ abell = 4059
 # Open Image file, extract data and header
 hdulist = fits.open(bcg[11])
 
-# TODO: New TODO, experimenting again with version control
-
-# This is new code, try creating a decorator:
+# TODO: ....
 
 
 def some_decorator(input_func):
@@ -88,11 +86,8 @@ def parameters(yesorno):
         print(dimensions)
         # Co-ords of reference pixel; RA (deg), DEC (deg)
         print('[ RA (deg):', RA, ', DEC (deg):', DEC, ']')
-# updates to the master branch while being worked on together
 
 
-
-# more dev code, close to recent alterations in the master branch
 def center(imagearray):
     """Highest Intensity Pixel found"""
 
@@ -103,7 +98,6 @@ def center(imagearray):
 
     return maxindex1, maxindex2, maxvalue
 
-# Inserting new development code
 
 def cutimage(initialcentre):
     """ Cuts Image down to size """
