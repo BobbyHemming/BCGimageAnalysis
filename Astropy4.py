@@ -15,6 +15,28 @@ hdulist = fits.open(bcg[11])
 
 # TODO: New TODO, experimenting again with version control
 
+# This is new code, try creating a decorator:
+
+
+def some_decorator(input_func):
+    print("This is a decorator")
+
+    def wrap_func(*args, **kwargs):
+        print("This is the code before the func")
+        result = input_func(*args, **kwargs)
+        print("This is the code after the func")
+        return result
+
+    return wrap_func
+
+
+@some_decorator
+def hello(*args, **kwargs):
+    print("Hello {}".format(kwargs['name']))
+
+
+hello(name="Bobby")
+
 hdu = hdulist[1]          # Holds image data
 imagedata = hdu.data      # Extract the image data
 hduheader = hdulist[0]    # Header that contains image details
