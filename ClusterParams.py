@@ -1,5 +1,5 @@
 import numpy as np
-
+"""The  cluster parameters"""
 
 """Abell 76"""
 abell76imagename = 'abell76_wfpc2_pc.fits'
