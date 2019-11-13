@@ -13,7 +13,7 @@ abell = 4059
 # Open Image file, extract data and header
 hdulist = fits.open(bcg[11])
 
-# TODO: Update this so that the images can be displayed and the program executes as it used to!
+# TODO: put in the galaxy class framework
 
 hdu = hdulist[1]          # Holds image data
 imagedata = hdu.data      # Extract the image data
