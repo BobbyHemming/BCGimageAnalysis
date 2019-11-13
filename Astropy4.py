@@ -37,6 +37,7 @@ def hello(*args, **kwargs):
 
 
 hello(name="Bobby")
+# new line here for the start of tests
 
 hdu = hdulist[1]          # Holds image data
 imagedata = hdu.data      # Extract the image data
