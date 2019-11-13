@@ -90,6 +90,9 @@ def parameters(yesorno):
         print('[ RA (deg):', RA, ', DEC (deg):', DEC, ']')
 
 
+# updates to the master branch while being worked on together
+
+
 def center(imagearray):
     """Highest Intensity Pixel found"""
 
