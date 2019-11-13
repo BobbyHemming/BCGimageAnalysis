@@ -879,7 +879,7 @@ abell1983 = a1983centre, a1983size, a1983angle, a1983eccentricity, \
 
 
 "Abell 2040"
-a2040imagename = 'images/abell2040'
+a2040imagename = 'images/abell2040.fits'
 a2040centre = 431, 438    # Centre y, x (don't ask)
 a2040offset = 0.2, -0.6   # Pixel offset off of centre x, y +ve moves to the right and up
 a2040size = 125
@@ -1873,8 +1873,8 @@ abell4049 = a4049centre, a4049size, a4049angle, a4049eccentricity, \
 
 
 """Abell 4059"""
-abell4059imagename = 'images/a4059.fits'
-abell4059centre = 651, 1006    # Centre y, x (don't ask)
+abell4059imagename = 'images/abell4059.fits'
+abell4059centre = 464, 389    # Centre y, x (don't ask)
 abell4059offset = 0.5, -3   # Pixel offset off of centre x, y +ve moves to the right and up
 abell4059size = 150
 abell4059iterations = 140
@@ -1893,7 +1893,8 @@ abell4059rot = 'yes', 0.8
 abell4059gs = 8
 """Final List: holding all the BCGs individual parameters:::::"""
 abell4059 = abell4059centre, abell4059size, abell4059angle, abell4059eccentricity,\
-            abell4059params, abell4059offset, abell4059gs, abell4059rot, abell4059iterations, 174.84, abell4059ir
+            abell4059params, abell4059offset, abell4059gs, abell4059rot, abell4059iterations, 174.84, abell4059ir, \
+            abell4059imagename
 
 
 galaxylist = abell76, abell119, abell147, abell160, abell168, abell189, abell193, abell195, abell260, abell262,\

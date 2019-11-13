@@ -8,11 +8,12 @@ from lmfit import Parameters, fit_report, Minimizer
 from matplotlib.ticker import ScalarFormatter
 from matplotlib import font_manager as fm, rcParams
 from numpy import diff
-from ClusterParams import abell3676 as bcg
-abell = 3676
+from ClusterParams import abell4059 as bcg
+abell = 4059
 # Open Image file, extract data and header
 hdulist = fits.open(bcg[11])
 
+# TODO: Update this so that the images can be displayed and the program executes as it used to!
 
 hdu = hdulist[1]          # Holds image data
 imagedata = hdu.data      # Extract the image data
