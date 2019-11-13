@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c8208e83-e65d-43fb-b6d8-5eca9a067d83" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Astropy4.py" afterPath="$PROJECT_DIR$/Astropy4.py" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClusterParams.py" afterPath="$PROJECT_DIR$/ClusterParams.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datafiles/A2040.txt" afterPath="$PROJECT_DIR$/datafiles/A2040.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datafiles/A4059.txt" afterPath="$PROJECT_DIR$/datafiles/A4059.txt" />
+>>>>>>> Dev
+>>>>>>> master
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,7 +49,37 @@
     <SUITE FILE_PATH="coverage/Project$exposuretime.coverage" NAME="exposuretime Coverage Results" MODIFIED="1555202886648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Oldfiles" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+=======
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Astropy4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Astropy4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+              <folding>
+                <element signature="e#16#43#0" expanded="true" />
+                <element signature="e#1447#2431#0" expanded="false" />
+                <element signature="e#2462#2680#0" expanded="false" />
+                <element signature="e#2716#2955#0" expanded="false" />
+                <element signature="e#2988#3083#0" expanded="false" />
+                <element signature="e#3111#3194#0" expanded="false" />
+                <element signature="e#3221#3266#0" expanded="false" />
+                <element signature="e#3888#5397#0" expanded="false" />
+                <element signature="e#5440#6171#0" expanded="false" />
+                <element signature="e#6212#6600#0" expanded="false" />
+                <element signature="e#6630#6890#0" expanded="false" />
+                <element signature="e#7911#7960#0" expanded="false" />
+                <element signature="e#8876#11530#0" expanded="false" />
+                <element signature="e#11563#11887#0" expanded="false" />
+                <element signature="e#11930#13016#0" expanded="false" />
+                <element signature="e#13522#13806#0" expanded="false" />
+                <element signature="e#14628#14695#0" expanded="false" />
+=======
+    <leaf>
+>>>>>>> master
       <file leaf-file-name="Astropy4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Astropy4.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,6 +87,26 @@
               <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#16#43#0" expanded="true" />
+<<<<<<< HEAD
+=======
+                <marker date="1573652562835" expanded="false" signature="1474:2463" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="2489:2712" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="2743:2987" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="3015:3115" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="3138:3226" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="3247:3298" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="3915:5429" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="5467:6203" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="6239:6632" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="6656:6922" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="7938:7992" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="8902:11562" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="11589:11919" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="11956:13048" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="13548:13838" ph="..." />
+                <marker date="1573652562835" expanded="false" signature="14655:14727" ph="..." />
+>>>>>>> Dev
+>>>>>>> master
               </folding>
             </state>
           </provider>
@@ -56,8 +115,18 @@
       <file leaf-file-name="ClusterParams.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClusterParams.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="30064">
               <caret line="1879" column="25" lean-forward="false" selection-start-line="1879" selection-start-column="25" selection-end-line="1879" selection-end-column="25" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="30368">
+              <caret line="1898" column="32" lean-forward="false" selection-start-line="1898" selection-start-column="32" selection-end-line="1898" selection-end-column="32" />
+=======
+            <state relative-caret-position="226">
+              <caret line="1879" column="25" lean-forward="true" selection-start-line="1879" selection-start-column="25" selection-end-line="1879" selection-end-column="25" />
+>>>>>>> Dev
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -163,8 +232,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
+=======
+>>>>>>> master
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,6 +258,11 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> master
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,10 +427,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="23" width="1440" height="816" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115879826" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+<<<<<<< HEAD
+    <frame x="0" y="23" width="1440" height="816" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11444921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <frame x="0" y="23" width="1440" height="813" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.113018595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> Dev
+>>>>>>> master
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -530,18 +621,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ClusterParams.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="30064">
           <caret line="1879" column="25" lean-forward="false" selection-start-line="1879" selection-start-column="25" selection-end-line="1879" selection-end-column="25" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="30368">
+          <caret line="1898" column="32" lean-forward="false" selection-start-line="1898" selection-start-column="32" selection-end-line="1898" selection-end-column="32" />
+=======
+        <state relative-caret-position="226">
+          <caret line="1879" column="25" lean-forward="true" selection-start-line="1879" selection-start-column="25" selection-end-line="1879" selection-end-column="25" />
+>>>>>>> Dev
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Astropy4.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="224">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#16#43#0" expanded="true" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="215">
+          <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+          <folding>
+            <element signature="e#16#43#0" expanded="true" />
+            <element signature="e#1447#2431#0" expanded="false" />
+            <element signature="e#2462#2680#0" expanded="false" />
+            <element signature="e#2716#2955#0" expanded="false" />
+            <element signature="e#2988#3083#0" expanded="false" />
+            <element signature="e#3111#3194#0" expanded="false" />
+            <element signature="e#3221#3266#0" expanded="false" />
+            <element signature="e#3888#5397#0" expanded="false" />
+            <element signature="e#5440#6171#0" expanded="false" />
+            <element signature="e#6212#6600#0" expanded="false" />
+            <element signature="e#6630#6890#0" expanded="false" />
+            <element signature="e#7911#7960#0" expanded="false" />
+            <element signature="e#8876#11530#0" expanded="false" />
+            <element signature="e#11563#11887#0" expanded="false" />
+            <element signature="e#11930#13016#0" expanded="false" />
+            <element signature="e#13522#13806#0" expanded="false" />
+            <element signature="e#14628#14695#0" expanded="false" />
+=======
+        <state relative-caret-position="464">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <element signature="e#16#43#0" expanded="true" />
+            <marker date="1573652562835" expanded="false" signature="1474:2463" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="2489:2712" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="2743:2987" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="3015:3115" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="3138:3226" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="3247:3298" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="3915:5429" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="5467:6203" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="6239:6632" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="6656:6922" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="7938:7992" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="8902:11562" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="11589:11919" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="11956:13048" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="13548:13838" ph="..." />
+            <marker date="1573652562835" expanded="false" signature="14655:14727" ph="..." />
+>>>>>>> Dev
+>>>>>>> master
           </folding>
         </state>
       </provider>
