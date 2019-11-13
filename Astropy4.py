@@ -100,6 +100,7 @@ def center(imagearray):
 
     return maxindex1, maxindex2, maxvalue
 
+# Inserting new development code
 
 def cutimage(initialcentre):
     """ Cuts Image down to size """
