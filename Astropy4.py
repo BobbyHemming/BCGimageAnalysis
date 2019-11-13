@@ -13,7 +13,7 @@ abell = 4059
 # Open Image file, extract data and header
 hdulist = fits.open(bcg[11])
 
-# TODO: New TODO, experimenting with version control
+# TODO: New TODO, experimenting again with version control
 
 hdu = hdulist[1]          # Holds image data
 imagedata = hdu.data      # Extract the image data
