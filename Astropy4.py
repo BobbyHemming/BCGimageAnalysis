@@ -14,10 +14,6 @@ abell = 4059
 hdulist = fits.open(bcg[11])
 
 
-# This is the master branch.
-# TODO: make a galaxy class so galaxies can be stored as objects rather than difficult lists of items
-# TODO: Not in Dev branch that has now been deleted
-
 hdu = hdulist[1]          # Holds image data
 imagedata = hdu.data      # Extract the image data
 hduheader = hdulist[0]    # Header that contains image details
