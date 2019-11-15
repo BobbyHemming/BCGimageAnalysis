@@ -42,6 +42,8 @@ imagedata = hdu.data      # Extract the image data
 hduheader = hdulist[0]    # Header that contains image details
 mean = np.mean(imagedata)
 
+print(type(imagedata))
+
 np.set_printoptions(threshold=np.inf)
 showstart = 'yes'
 if showstart == 'yes':
