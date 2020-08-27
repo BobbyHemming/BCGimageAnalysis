@@ -49,7 +49,7 @@ showstart = 'yes'
 if showstart == 'yes':
     plt.figure()                        # Original, unaltered image:
     plt.title("Hubble ST Full Image")
-    plt.imshow(imagedata, cmap='inferno', vmin=0, vmax=mean*40, origin={'lower', 'lower'})
+    plt.imshow(imagedata, cmap='inferno', vmin=0, vmax=mean*40, origin='lower')
     plt.colorbar()
     plt.show()
 
@@ -278,7 +278,7 @@ intensitymodeldata = modelinfo[0]   # The list of averaged intensities in each b
 
 
 plt.figure()
-plt.imshow(newdata, cmap='gray', vmin=0, vmax=np.mean(newdata)*bcg[6], origin={'lower', 'lower'})
+plt.imshow(newdata, cmap='gray', vmin=0, vmax=np.mean(newdata)*bcg[6], origin=lower')
 plt.colorbar()
 plt.show()
 
