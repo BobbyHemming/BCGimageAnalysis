@@ -1,5 +1,8 @@
 """BCG Dust"""
 
+import warnings
+warnings.simplefilter("ignore", UserWarning)
+
 from astropy.io import fits
 import numpy as np
 import os
@@ -536,7 +539,7 @@ np.savetxt(filename, (rarcsecs, m, modelm, dustmodifiedm, nodustmodelsbp), fmt="
 
 
 plt.figure()
-plt.imshow(extinctionfinder(extinctionimage)[0], cmap='gray', vmin=0, vmax=np.amax(extinctionfinder(extinctionimage)[0]), origin={'lower', 'lower'})
+plt.imshow(extinctionfinder(extinctionimage)[0], cmap='gray', vmin=0, vmax=np.amax(extinctionfinder(extinctionimage)[0]), origin='lower')
 plt.colorbar()
 plt.show()
 
