@@ -278,17 +278,17 @@ intensitymodeldata = modelinfo[0]   # The list of averaged intensities in each b
 
 
 plt.figure()
-plt.imshow(newdata, cmap='gray', vmin=0, vmax=np.mean(newdata)*bcg[6], origin=lower')
+plt.imshow(newdata, cmap='gray', vmin=0, vmax=np.mean(newdata)*bcg[6], origin='lower')
 plt.colorbar()
 plt.show()
 
 plt.figure()
-plt.imshow(modeldata, cmap='gray', vmin=0, vmax=np.mean(modeldata)*bcg[6], origin={'lower', 'lower'})
+plt.imshow(modeldata, cmap='gray', vmin=0, vmax=np.mean(modeldata)*bcg[6], origin='lower')
 plt.colorbar()
 plt.show()
 
 plt.figure()
-plt.imshow(newdata - modeldata, cmap='gray', vmin=0, vmax=np.mean(modeldata)*bcg[6]*0.7, origin={'lower', 'lower'})
+plt.imshow(newdata - modeldata, cmap='gray', vmin=0, vmax=np.mean(modeldata)*bcg[6]*0.7, origin='lower')
 plt.colorbar()
 plt.show()
 
@@ -471,17 +471,17 @@ nodustmodelsbp = coordsconverter(intensity(nodustmodelimage)[0])[1]
 def imageplotter(imageone, imagetwo):
 
     plt.figure()
-    plt.imshow(imagetwo, cmap='inferno', vmin=-0.3, vmax=mean*80, origin={'lower', 'lower'})
+    plt.imshow(imagetwo, cmap='inferno', vmin=-0.3, vmax=mean*80, origin='lower')
     plt.colorbar()
     plt.show()
 
     plt.figure()
-    plt.imshow(imageone, cmap='inferno', vmin=0, vmax=mean * 80, origin={'lower', 'lower'})
+    plt.imshow(imageone, cmap='inferno', vmin=0, vmax=mean * 80, origin='lower')
     plt.colorbar()
     plt.show()
 
     plt.figure()
-    plt.imshow(imageone - imagetwo, cmap='binary', vmin=0, vmax=mean * 13, origin={'lower', 'lower'})
+    plt.imshow(imageone - imagetwo, cmap='binary', vmin=0, vmax=mean * 13, origin='lower')
     plt.colorbar()
     plt.show()
 
@@ -541,7 +541,7 @@ plt.colorbar()
 plt.show()
 
 plt.figure()
-plt.imshow(1 - newdata/nodustmodelimage, cmap='binary', vmin=0, vmax=np.mean(1 - newdata/nodustmodelimage)*3, origin={'lower', 'lower'})
+plt.imshow(1 - newdata/nodustmodelimage, cmap='binary', vmin=0, vmax=np.mean(1 - newdata/nodustmodelimage)*3, origin='lower')
 plt.colorbar()
 plt.show()
 
