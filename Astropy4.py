@@ -2,7 +2,7 @@
 
 import warnings
 warnings.simplefilter("ignore", UserWarning)
-
+import time
 from astropy.io import fits
 import numpy as np
 import os
@@ -19,33 +19,41 @@ hdulist = fits.open(bcg[11])
 # TODO: ....
 
 
-def some_decorator(input_func):
-    print("This is a decorator")
+def loading(length):
+    for i in range(length):
+        print('.')
+        time.sleep(1)
 
-    def wrap_func(*args, **kwargs):
-        print("This is the code before the func")
-        result = input_func(*args, **kwargs)
-        print("This is the code after the func")
-        return result
+def important_text(txt):
+    time.sleep(1)
+    print('\n---------------------------------\n')
+    print(txt)
+    print('\n---------------------------------\n')
 
-    return wrap_func
+def descriptive_text(txt):
+    time.sleep(1)
+    print('\n')
+    print(txt)
+    time.sleep(2)
+
+loading(3)
+important_text('Brightest Cluster Galaxy image analysis script!')
+loading(3)
+
+descriptive_text('This script runs analysis on raw images from the hubble space telescope.')
+descriptive_text('The output is an extinction image which indicates dust presence and structure')
 
 
-@some_decorator
-def hello(*args, **kwargs):
-    print(*args)
-    print("Hello {}".format(kwargs['name']))
-
-
-hello(name="Bobby")
 # new line here for the start of tests
+important_text('Loading raw image')
+loading(3)
+descriptive_text(f'Image shows the galaxy at the center of abell {abell}, exit window to continue')
 
 hdu = hdulist[1]          # Holds image data
 imagedata = hdu.data      # Extract the image data
 hduheader = hdulist[0]    # Header that contains image details
 mean = np.mean(imagedata)
 
-print(type(imagedata))
 
 np.set_printoptions(threshold=np.inf)
 showstart = 'yes'
@@ -144,6 +152,8 @@ rotate = bcg[7][0]
 if rotate == 'yes':
     newdata = np.rot90(newdata, k=1, axes=(0, 1))
 
+important_text("Resizing, recentering, cropping image for analysis")
+loading(3)
 
 # Find highest pixel in cut down image, return the pixel position:
 centregalaxy = int(center(newdata)[0]), int(center(newdata)[1])
@@ -243,6 +253,9 @@ def residual(params):
     return res
 
 
+important_text("Fitting intensity profile to image data")
+loading(3)
+
 # IMAGE DATA intensity information:
 intensityinfo = intensity(newdata)  # Intensity binning function working on the image data
 intensitydata = intensityinfo[0]    # The list of averaged intensities in each bin of image data
@@ -251,6 +264,9 @@ holdingarray = intensityinfo[2]     # Holding array with positions of particles 
 binsize = intensityinfo[3]
 
 np.seterr(all='raise')
+
+important_text('Fitting best model (minimising least squares')
+loading(3)
 
 """The parameter fitting section of the code"""
 params = Parameters()
@@ -270,6 +286,7 @@ clusterparams = ci, br, g, t, b
 
 printfittingreport = 'yes'
 if printfittingreport == 'yes':
+    print('Parameter report of best fit to Nuker model:')
     print(fit_report(out))
     print(ci, br, g, t, b)
 
@@ -279,6 +296,8 @@ modeldata = imagemodel(ci, br, g, t, b)
 modelinfo = intensity(modeldata)    # Intensity binning function working on the model data
 intensitymodeldata = modelinfo[0]   # The list of averaged intensities in each bin of model data
 
+
+important_text("Show resized raw, model and resdual image")
 
 plt.figure()
 plt.imshow(newdata, cmap='gray', vmin=0, vmax=np.mean(newdata)*bcg[6], origin='lower')
@@ -298,6 +317,8 @@ plt.show()
 # filename1 = "A{}image.txt".format(abell)
 # image = newdata - modeldata
 # np.savetxt(filename1, image, fmt="%f")
+
+important_text('Show intensity profile plot against radius')
 
 
 def sbplotter(x, y, modely, dustmodified):
@@ -394,7 +415,6 @@ def dustfinder(arraytobestripped):
         strippedarray = array[l, :, :][array[l, :, 0] != 0]
         meanlist = np.sum(strippedarray[:, 0]) / len(strippedarray[:, 0])
         sx = standev(strippedarray[:, 0], meanlist, len(strippedarray[:, :]))
-        print(sx)
         newbin = []
 
         for t in range(len(strippedarray[:, 0])):
@@ -524,12 +544,14 @@ def extinctionfinder(image):
     return newimage, newdust
 
 
+important_text('Show final images before dust mass found')
+
 imageplotter(nodustmodelimage, newdata)
 # imageplotter(newdata, modeldata)
 # imageplotter(extinctionimage, newdata)
 dustmass = extinctionfinder(extinctionimage)[1]
 
-print('Dust mass is =', dustmass)
+print(f'Dust mass is = {dustmass} solar masses')
 filename = "datafiles/A{}.txt".format(abell)
 np.savetxt(filename, (rarcsecs, m, modelm, dustmodifiedm, nodustmodelsbp), fmt="%f")
 
